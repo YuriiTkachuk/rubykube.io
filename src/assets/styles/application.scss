@@ -1,0 +1,41 @@
+/* config variables */
+@import "~theme-corporate/stylesheets/variables";
+
+/* modules */
+@import "~theme-corporate/stylesheets/custom/modules/mixins";
+@import "~theme-corporate/stylesheets/custom/modules/custom_effects";
+
+/* bootstrap overrides */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~theme-corporate/stylesheets/bootstrap/overrides";
+
+/* components */
+@import "~theme-corporate/stylesheets/custom/components/alerts";
+@import "~theme-corporate/stylesheets/custom/components/animation";
+@import "~theme-corporate/stylesheets/custom/components/badges";
+@import "~theme-corporate/stylesheets/custom/components/buttons";
+@import "~theme-corporate/stylesheets/custom/components/button_groups";
+@import "~theme-corporate/stylesheets/custom/components/dropdowns";
+@import "~theme-corporate/stylesheets/custom/components/stats_cards";
+
+/* icons */
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+/* snippets */
+@import "~theme-corporate/stylesheets/custom/snippets/slider_effects";
+@import "~theme-corporate/stylesheets/custom/snippets/slider_element";
+@import "~theme-corporate/stylesheets/custom/snippets/footers";
+
+/* layout */
+@import "~theme-corporate/stylesheets/custom/layout";
+
+/* modules */
+@import "~theme-corporate/stylesheets/custom/modules/_custom_effects";
+@import "~theme-corporate/stylesheets/custom/modules/_mixins";
+
+/* pages */
+@import "./about-us";
+@import "./careers";
+@import "./home";
+

@@ -1,24 +1,45 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>hello</h1>
-    <router-view></router-view>
+    <navbar/>
+    <transition name="fade" mode="out-in" appear>
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app'
-}
-</script>
+<style lang="scss">
+@import "~@/assets/styles/application.scss";
 
-<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 </style>
+
+<script>
+  import Navbar from '@/components/Navbar'
+
+  export default {
+    name: 'App',
+    components: {
+      Navbar
+    }
+  }
+</script>
