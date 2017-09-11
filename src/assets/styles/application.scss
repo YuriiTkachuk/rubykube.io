@@ -7,6 +7,7 @@
 
 /* bootstrap overrides */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/scss/bootstrap.scss";
 @import "~theme-corporate/stylesheets/bootstrap/overrides";
 
 /* components */
@@ -30,6 +31,14 @@ $fa-font-path: "~font-awesome/fonts";
 /* layout */
 @import "~theme-corporate/stylesheets/custom/layout";
 
+/* pages */
+@import "~theme-corporate/stylesheets/custom/pages/index";
+@import "~theme-corporate/stylesheets/custom/pages/index_mobile";
+@import "~theme-corporate/stylesheets/custom/pages/index_mobile_2";
+@import "~theme-corporate/stylesheets/custom/pages/index_mobile_3";
+@import "~theme-corporate/stylesheets/custom/pages/index_mobile_4";
+
+
 /* modules */
 @import "~theme-corporate/stylesheets/custom/modules/_custom_effects";
 @import "~theme-corporate/stylesheets/custom/modules/_mixins";
@@ -38,4 +47,3 @@ $fa-font-path: "~font-awesome/fonts";
 @import "./about-us";
 @import "./careers";
 @import "./home";
-
