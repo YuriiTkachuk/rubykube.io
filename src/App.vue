@@ -4,6 +4,7 @@
     <transition name="fade" mode="out-in" appear>
       <router-view></router-view>
     </transition>
+    <bottom/>
   </div>
 </template>
 
@@ -35,11 +36,13 @@ body {
 
 <script>
   import Navbar from '@/components/Navbar'
+  import Bottom from '@/components/Footer'
 
   export default {
     name: 'App',
     components: {
-      Navbar
+      Navbar,
+      Bottom
     }
   }
 </script>
