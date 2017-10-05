@@ -9,9 +9,14 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "4.0.0-beta",
+    "popper.js": "^1.12.5",
     "theme-corporate": "github:helios-technologies/theme-corporate",
     "vue": "^2.4.2",
-    "vue-router": "^2.7.0"
+    "vue-router": "^2.7.0",
+    "vue-sticky": "^3.3.1",
+    "vue-sticky-js": "^0.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

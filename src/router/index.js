@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import $ from 'jquery'
+import Services from '@/views/Services'
+window.jQuery = window.$ = $
 
 Vue.use(Router)
 
@@ -30,9 +33,7 @@ export default new Router({
     {
       path: '/services',
       name: 'Services',
-      component: {
-        template: require('@/views/services.html')
-      }
+      component: Services
     }
   ]
 })
