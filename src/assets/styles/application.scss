@@ -1,5 +1,6 @@
 /* config variables */
 @import "~theme-corporate/stylesheets/variables";
+$imagesPath: '~theme-corporate/images';
 
 /* modules */
 @import "~theme-corporate/stylesheets/custom/modules/mixins";
@@ -30,6 +31,7 @@ $fa-font-path: "~font-awesome/fonts";
 
 /* layout */
 @import "~theme-corporate/stylesheets/custom/layout";
+@import "~theme-corporate/stylesheets/images";
 
 /* pages */
 @import "~theme-corporate/stylesheets/custom/pages/index";
@@ -37,6 +39,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~theme-corporate/stylesheets/custom/pages/index_mobile_2";
 @import "~theme-corporate/stylesheets/custom/pages/index_mobile_3";
 @import "~theme-corporate/stylesheets/custom/pages/index_mobile_4";
+@import "~theme-corporate/stylesheets/custom/pages/index_features";
 
 
 /* modules */

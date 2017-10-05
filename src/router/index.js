@@ -26,6 +26,13 @@ export default new Router({
       component: {
         template: require('@/views/careers.html')
       }
+    },
+    {
+      path: '/services',
+      name: 'Services',
+      component: {
+        template: require('@/views/services.html')
+      }
     }
   ]
 })
