@@ -24,7 +24,9 @@ module.exports = merge(baseWebpackConfig, {
     new webpack.ProvidePlugin({
      $: 'jquery',
      jQuery: 'jquery',
-     'window.jQuery': 'jquery'
+     'window.jQuery': 'jquery',
+     Popper: ['popper.js', 'default'],
+     Tether: 'tether'
     }),
     // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
     new webpack.HotModuleReplacementPlugin(),
