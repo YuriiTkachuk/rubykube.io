@@ -40,6 +40,10 @@
         }
       })
 
+      $('body').scrollspy({
+        target: '.index-features-nav'
+      })
+
       setTimeout(function () {
         $('.nav-link').removeClass('featureFadeInDown')
       }, 1500)

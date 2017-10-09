@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'bootstrap'
 
 /* eslint-disable no-unused-vars */
 Vue.config.productionTip = false
