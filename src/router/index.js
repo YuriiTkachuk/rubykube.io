@@ -41,6 +41,13 @@ export default new Router({
       path: '/services',
       name: 'Services',
       component: Services
+    },
+    {
+      path: '/blogpost',
+      name: 'blogpost',
+      component: {
+        template: require('@/views/blog-post.html')
+      }
     }
   ]
 })
