@@ -51,7 +51,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader',
-        include: [resolve('src/views')]
+        include: [resolve('src/views')],
+        options: {
+          interpolate: true
+        }
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
