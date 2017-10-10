@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import $ from 'jquery'
 import Services from '@/views/Services'
-import Home from '@/views/Home'
 window.jQuery = window.$ = $
 
 Vue.use(Router)
@@ -13,7 +12,9 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: {
+        template: require('@/views/home.html')
+      }
     },
     {
       path: '/about-us',

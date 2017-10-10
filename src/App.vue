@@ -37,12 +37,27 @@ body {
 <script>
   import Navbar from '@/components/Navbar'
   import Bottom from '@/components/Footer'
+  import $ from 'jquery'
 
   export default {
     name: 'App',
     components: {
       Navbar,
       Bottom
+    },
+    mounted: function () {
+      var $quotes = $('.client-quote')
+      var $faces = $('.client-picture')
+
+      $faces.click(function (e) {
+        var index = $faces.index(this)
+
+        $quotes.removeClass('active')
+        $quotes.eq(index).addClass('active')
+
+        $faces.removeClass('active')
+        $(this).addClass('active')
+      })
     }
   }
 </script>
