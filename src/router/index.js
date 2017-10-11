@@ -48,6 +48,13 @@ export default new Router({
       component: {
         template: require('@/views/blogpost.html')
       }
+    },
+    {
+      path: '/project',
+      name: 'Project',
+      component: {
+        template: require('@/views/agency-project.html')
+      }
     }
   ]
 })
