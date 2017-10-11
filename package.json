@@ -12,11 +12,23 @@
     "jquery": "^3.2.1",
     "bootstrap": "4.0.0-beta",
     "popper.js": "^1.12.5",
-    "theme-corporate": "github:helios-technologies/theme-corporate",
+    "theme-corporate": "github:AlexHlopiachii/theme-corporate",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
     "vue-sticky": "^3.3.1",
-    "vue-sticky-js": "^0.0.4"
+    "vue-sticky-js": "^0.0.4",
+    "flipclock": "^0.7.8",
+    "font-awesome": "^4.7.0",
+    "animate.css": "^3.5.2",
+    "entypo": "^2.0.0",
+    "highlight.js": "^9.12.0",
+    "magnific-popup": "^1.1.0",
+    "masonry": "^0.0.2",
+    "pikaday": "^1.6.1",
+    "skrollr": "^0.6.26",
+    "tether": "^1.2.4",
+    "webpack-modernizr-loader": "^4.0.0",
+    "zoomerang": "^0.1.9"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -63,7 +75,10 @@
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.18.2",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "image-webpack-loader": "^1.7.0",
+    "style-loader": "^0.18.2",
+    "webpack-dev-server": "^2.7.1"
   },
   "engines": {
     "node": ">= 4.0.0",

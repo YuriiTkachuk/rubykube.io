@@ -2,3 +2,54 @@
 @import "~theme-corporate/stylesheets/variables";
 @import "~theme-corporate/stylesheets/custom/modules/mixins";
 @import "~theme-corporate/stylesheets/custom/layout";
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.main-menu router-link {
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: #fff;
+    border-left: 1px solid #e5e5e5;
+}
+
+.main-menu router-link:hover {
+    background: #f5f5f5;
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    left: 1px;
+    display: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #2c3e50;
+}
+
+.main-menu .sub-menu router-link {
+    margin-bottom: -1px;
+}
+
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+.drop-item > router-link {
+  color: white;
+}
+
+.drop-item > router-link:hover {
+  color: black;
+}
