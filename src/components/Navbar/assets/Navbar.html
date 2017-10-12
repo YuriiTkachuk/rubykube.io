@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="z-index: 10;" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
 	<div class="container no-override">
 		<router-link class="navbar-brand" to="/">
 			<img src="~@/assets/images/logo.png" class="d-none d-lg-inline mr-2 w-25 h-100" />
@@ -10,8 +10,20 @@
 
 		<div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
 			<ul class="navbar-nav main-menu">
-				<li class="nav-item">
-					<router-link class="nav-link" to="/careers">Products</router-link>
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+						Technologies
+						<i class="fa fa-chevron-down"></i>
+					</a>
+					<ul class="sub-menu">
+						<router-link class="drop-item nav-item" to="/project">Big data</router-link>
+						<router-link class="drop-item nav-item" to="/project">Blockchain</router-link>
+						<router-link class="drop-item nav-item" to="/project">Cloud infrastructure</router-link>
+						<router-link class="drop-item nav-item" to="/project">Kite</router-link>
+						<router-link class="drop-item nav-item" to="/project">Rails</router-link>
+						<router-link class="drop-item nav-item" to="/project">Microservices</router-link>
+						<router-link class="drop-item nav-item" to="/project">Kubernetes</router-link>
+					</ul>
 				</li>
 				<li class="nav-item">
 					<router-link class="nav-link" to="/services">Services</router-link>
@@ -21,20 +33,6 @@
 				</li>
 				<li class="nav-item">
 					<router-link class="nav-link" to="/about-us">About Us</router-link>
-				</li>
-				<li class="nav-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-						Technologies
-						<i class="fa fa-chevron-down"></i>
-					</a>
-					<ul class="sub-menu" role="menu">
-						<router-link class="nav-item dropdown-item" style="color: white;" to="/project">Business</router-link>
-						<router-link class="nav-item dropdown-item" style="color: white;" to="/project">Business</router-link>
-						<router-link class="nav-item dropdown-item" style="color: white;" to="/project">Business</router-link>
-						<router-link class="nav-item dropdown-item" style="color: white;" to="/project">Business</router-link>
-						<router-link class="nav-item dropdown-item" style="color: white;" to="/project">Business</router-link>
-						<router-link class="nav-item dropdown-item" style="color: white;" to="/project">Business</router-link>
-					</ul>
 				</li>
 			</ul>
 		</div>
