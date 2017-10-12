@@ -7,22 +7,21 @@
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-
-		<div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
-			<ul class="navbar-nav main-menu">
-				<li class="nav-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+		<div class="collapse navbar-collapse justify-content-end center myMenu" id="navbar-collapse">
+			<ul class="navbar-nav main-menu dropDownMenu">
+				<li class="nav-item dropdown has-children">
+					<a href="#" class="nav-link dropdown-toggle" id="drop-menu">
 						Technologies
 						<i class="fa fa-chevron-down"></i>
 					</a>
-					<ul class="sub-menu">
-						<router-link class="drop-item nav-item" to="/project">Big data</router-link>
-						<router-link class="drop-item nav-item" to="/project">Blockchain</router-link>
-						<router-link class="drop-item nav-item" to="/project">Cloud infrastructure</router-link>
-						<router-link class="drop-item nav-item" to="/project">Kite</router-link>
-						<router-link class="drop-item nav-item" to="/project">Rails</router-link>
-						<router-link class="drop-item nav-item" to="/project">Microservices</router-link>
-						<router-link class="drop-item nav-item" to="/project">Kubernetes</router-link>
+					<ul>
+						<router-link class="drop-item " to="/project">Big data</router-link>
+						<router-link class="drop-item " to="/project">Blockchain</router-link>
+						<router-link class="drop-item " to="/project">Cloud infrastructure</router-link>
+						<router-link class="drop-item " to="/project">Kite</router-link>
+						<router-link class="drop-item " to="/project">Rails</router-link>
+						<router-link class="drop-item " to="/project">Microservices</router-link>
+						<router-link class="drop-item " to="/project">Kubernetes</router-link>
 					</ul>
 				</li>
 				<li class="nav-item">
