@@ -38,8 +38,8 @@
   p {
     color: #fff;
     text-align: center;
-    font-size: 24px;
-    line-height: 37px;
+    font-size: 20px;
+    line-height: 27px;
     width: 70%;
     margin: 0 auto;
     @include animationDelay(.3s);
@@ -47,6 +47,13 @@
       font-size: 21px;
       width: 80%;
     }
+  }
+  h3 {
+    padding-top: 150px;
+    color: #fff;
+    width: 80%;
+    text-align: right;
+    margin: auto;
   }
 }
 
@@ -64,6 +71,83 @@
     }
   }
 }
+
+.agency-about-text {
+  background: #F9F9F9;
+  padding-top: 50px;
+  border-top: 1px solid #F0F0F0;
+  h4 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  hr {
+    width: 50px;
+    margin: 20px auto 25px;
+    border-top: 2px solid #ccc;
+  }
+  h3 {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #444;
+  }
+  .member {
+    text-align: center;
+    margin: 0 auto;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    &:hover {
+      .mask {
+        opacity: 1;
+      }
+    }
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+      background: rgba(29, 32, 34, 0.7);
+      opacity: 0;
+      @include transition(all .4s);
+      a {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 3px;
+        position: relative;
+        top: 52px;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        background: #fff;
+        border-radius: 50%;
+        color: rgba(56, 64, 74, 1);
+      }
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+  .name {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 45px;
+    font-weight: 500;
+  }
+}
+
 
 .agency-about-team {
   margin-top: 100px;
